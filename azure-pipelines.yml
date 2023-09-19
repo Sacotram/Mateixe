@@ -2,8 +2,8 @@
 - task: AzureStaticWebApp@0
   inputs:
     workingDirectory: '$(System.DefaultWorkingDirectory).src'
-    app_location: './src'
-    output_location: './src'
+    app_location: '/src'
+    output_location: '/src'
     api_location: 'api'
     skip_app_build: true
     azure_static_web_apps_api_token: '$(DeploymentToken)'
