@@ -1,4 +1,12 @@
 # Starter pipeline
+- task: AzureStaticWebApp@0
+  inputs:
+    workingDirectory: '$(System.DefaultWorkingDirectory).src'
+    app_location: './src'
+    output_location: './src'
+    api_location: 'api'
+    skip_app_build: true
+    azure_static_web_apps_api_token: '$(DeploymentToken)'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
